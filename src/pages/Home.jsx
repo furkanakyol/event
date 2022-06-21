@@ -4,6 +4,7 @@ import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import avatar1 from "../img/avatar1.png";
 import avatar2 from "../img/avatar2.png";
+import SuggestedCommunities from "../components/SuggestedCommunities";
 import { grey } from "@mui/material/colors";
 const Home = () => {
   return (
@@ -429,32 +430,7 @@ const Home = () => {
           </div>
         </div>
         <div className="right-side">
-          <div className="suggested-communities">
-            <div className="communities-title">
-            <i class="ri-group-line"></i>
-              <span>Önerilen topluluklar</span>
-            </div>
-            <div className="communities-body">
-              <div className="community-item">
-                <div className="flex-1">
-                  <img src={avatar1} alt="" />
-                </div>
-                <div className="flex-2">
-                  <p className="p1">Woonzero Community das das dasdsadsa</p>
-                  <div className="p2">
-                    <div className="future">
-                      <i class="ri-map-pin-line"></i>
-                      <span>Muğla/Türkiye</span>
-                    </div>
-                    <div className="future">
-                      <i class="ri-user-line"></i>
-                      <span>200 üye</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         <SuggestedCommunities/>
         </div>
       </div>
     </div>
