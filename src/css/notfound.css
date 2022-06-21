@@ -1,0 +1,18 @@
+.no-user-main {
+  height: 100%;
+  width: 100%;
+}
+
+.no-user-content, .no-user-main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.no-user-content {
+  flex-direction: column;
+}
+.no-user-content img {
+  height: 300px;
+  width: 300px;
+}/*# sourceMappingURL=notfound.css.map */

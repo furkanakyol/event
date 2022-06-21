@@ -1,0 +1,232 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.header .logo-area {
+  display: flex;
+  align-items: center;
+}
+.header .logo-area img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+.header .logo-area p {
+  margin-left: 14px;
+  font-size: 32px;
+  color: #3E3E3E;
+}
+.header .search-area {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+}
+.header .search-area .search {
+  width: 100%;
+  height: 40px;
+}
+.header .search-area .search input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 1px solid #BDBDBD;
+  padding: 11px 8px;
+  border-radius: 6px;
+}
+.header .right-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 32px;
+}
+.header .notofications i {
+  font-size: 28px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 230px;
+  height: 100%;
+  padding: 30px 18px;
+  display: flex;
+  flex-direction: column;
+}
+.navbar .navbar-menu {
+  display: flex;
+  flex-direction: column;
+}
+.navbar .navbar-menu .active .navbar-menu-item {
+  color: #007EFD;
+  background-color: #F5FAFF;
+}
+.navbar .navbar-menu .active .navbar-menu-item span {
+  text-decoration: underline;
+}
+.navbar .navbar-menu .navbar-menu-item {
+  color: #353535;
+  padding: 14px 10px;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  transition: all 0.4s ease;
+}
+.navbar .navbar-menu .navbar-menu-item i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.navbar .navbar-menu .navbar-menu-item:hover {
+  color: #007EFD;
+  background-color: #F5FAFF;
+}
+.navbar .navbar-menu .navbar-menu-item:hover span {
+  text-decoration: underline;
+}
+
+.no-user-main {
+  height: 100%;
+  width: 100%;
+}
+
+.no-user-content, .no-user-main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.no-user-content {
+  flex-direction: column;
+}
+.no-user-content img {
+  height: 300px;
+  width: 300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  padding-top: 60px;
+  height: 100%;
+}
+
+.main,
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+}
+
+.App {
+  height: calc(100% - 60px);
+  display: flex;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.hello-text {
+  padding: 43px 53px;
+}
+.hello-text p:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.home {
+  display: flex;
+  background-color: #FAFBFF;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 53px;
+}
+.home-list .home-list-item {
+  width: 292px;
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  padding: 13px 9px;
+  margin: 8px;
+}
+.home-list .home-list-item .home-list-image {
+  width: 100%;
+  height: 156px;
+}
+.home-list .home-list-item .home-list-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+.home-list .home-list-item .home-list-body p {
+  color: #3E3E3E;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 7px 0 0 3px;
+  font-size: 20px;
+}
+.home-list .home-list-item .home-list-body .home-list-feature {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+.home-list .home-list-item .home-list-body .feature {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+}
+.home-list .home-list-item .home-list-body .feature i {
+  margin-right: 5px;
+}
+.home-list .home-list-item .home-list-body .avatar-group-item {
+  color: #3E3E3E;
+}
+.home-list .home-list-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-list .home-list-footer .community-name p {
+  color: #3E3E3E;
+  font-size: 14px;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}/*# sourceMappingURL=style.css.map */

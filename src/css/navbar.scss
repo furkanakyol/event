@@ -1,0 +1,42 @@
+@import "variable";
+.navbar {
+    width: 230px;
+    height: 100%;
+    padding: 30px 18px;
+    display: flex;
+    flex-direction: column;
+    .navbar-menu {
+      display: flex;
+      flex-direction: column;
+      .active {
+        .navbar-menu-item {
+          color: $menu-hover;
+          background-color: $menu-hover-bg;
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+  
+      .navbar-menu-item {
+        color: $color-2;
+        padding: 14px 10px;
+        display: flex;
+        align-items: center;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        transition: all 0.4s ease;
+        i {
+          font-size: 24px;
+          margin-right: 10px;
+        }
+        &:hover {
+          color: $menu-hover;
+          background-color: $menu-hover-bg;
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }

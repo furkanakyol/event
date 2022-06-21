@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.header .logo-area {
+  display: flex;
+  align-items: center;
+}
+.header .logo-area img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+.header .logo-area p {
+  margin-left: 14px;
+  font-size: 32px;
+  color: #3E3E3E;
+}
+.header .search-area {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+}
+.header .search-area .search {
+  width: 100%;
+  height: 40px;
+}
+.header .search-area .search input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 1px solid #BDBDBD;
+  padding: 11px 8px;
+  border-radius: 6px;
+}
+.header .right-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 32px;
+}
+.header .notofications i {
+  font-size: 28px;
+  margin-right: 24px;
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */
