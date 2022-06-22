@@ -192,18 +192,18 @@ html {
   }
 }
 
-.flex{
+.flex {
   display: flex;
-  .left-side{
+  .left-side {
     width: 80%;
   }
-  .right-side{
+  .right-side {
     width: 20%;
     margin-right: 50px;
   }
 }
 
-.community-list{
+.community-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -211,31 +211,31 @@ html {
   background-color: $main-bg;
   height: 100%;
   flex: 1 1 auto;
-  .community-list-single{
+  .community-list-single {
     width: 300px;
     background-color: $bg-color-w;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     padding-bottom: 20px;
     border-radius: 10px;
     margin: 25px;
-    .community-list-img{
+    .community-list-img {
       width: 100%;
       height: 136px;
-      img{
+      img {
         width: 100%;
         height: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
       }
     }
-    .community-list-body{
+    .community-list-body {
       display: flex;
-      .communitiy-list-image{
+      .communitiy-list-image {
         width: 45px;
         height: 45px;
         margin-top: -10px;
         margin-left: 13px;
-        img{
+        img {
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -243,24 +243,58 @@ html {
           border: 3px solid $bg-color-w;
         }
       }
-      .community-list-name{
-        .name{
+      .community-list-name {
+        .name {
           font-size: 19px;
           padding-left: 8px;
         }
-        .futures{
+        .futures {
           display: flex;
           padding-left: 8px;
-          .future{
+          .future {
             display: flex;
             align-items: center;
             font-size: 14px;
           }
-          .future:not(:last-child){
+          .future:not(:last-child) {
             margin-right: 10px;
           }
         }
       }
+    }
+  }
+}
+.categories-lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 0 0 53px;
+  background-color: $main-bg;
+  height: 100%;
+  flex: 1 1 auto;
+  .categories-single {
+    width: 180px;
+    height: 180px;
+    background-color: $bg-color-w;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin: 25px;
+    .categories-img {
+      width: 100%;
+      height: 136px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        object-fit: cover;
+      }
+    }
+    .categories-body{
+      padding: 0 7px 0 7px;
+      display: flex;
+      align-items: center;
+      height: 44px;
     }
   }
 }

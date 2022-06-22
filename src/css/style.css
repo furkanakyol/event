@@ -381,4 +381,40 @@ html {
 }
 .community-list .community-list-single .community-list-body .community-list-name .futures .future:not(:last-child) {
   margin-right: 10px;
+}
+
+.categories-lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 0 0 53px;
+  background-color: #FAFBFF;
+  height: 100%;
+  flex: 1 1 auto;
+}
+.categories-lists .categories-single {
+  width: 180px;
+  height: 180px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin: 25px;
+}
+.categories-lists .categories-single .categories-img {
+  width: 100%;
+  height: 136px;
+}
+.categories-lists .categories-single .categories-img img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.categories-lists .categories-single .categories-body {
+  padding: 0 7px 0 7px;
+  display: flex;
+  align-items: center;
+  height: 44px;
 }/*# sourceMappingURL=style.css.map */
