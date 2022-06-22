@@ -21,6 +21,7 @@ html {
   display: flex;
   flex-direction: column;
   height: 100% !important;
+  background-color: $main-bg;
 }
 .App {
   height: calc(100% - 60px);
@@ -185,6 +186,79 @@ html {
         }
         .future:not(:last-child) {
           margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.flex{
+  display: flex;
+  .left-side{
+    width: 80%;
+  }
+  .right-side{
+    width: 20%;
+    margin-right: 50px;
+  }
+}
+
+.community-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 0 0 53px;
+  background-color: $main-bg;
+  height: 100%;
+  flex: 1 1 auto;
+  .community-list-single{
+    width: 300px;
+    background-color: $bg-color-w;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin: 25px;
+    .community-list-img{
+      width: 100%;
+      height: 136px;
+      img{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+    .community-list-body{
+      display: flex;
+      .communitiy-list-image{
+        width: 45px;
+        height: 45px;
+        margin-top: -10px;
+        margin-left: 13px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 6px;
+          border: 3px solid $bg-color-w;
+        }
+      }
+      .community-list-name{
+        .name{
+          font-size: 19px;
+          padding-left: 8px;
+        }
+        .futures{
+          display: flex;
+          padding-left: 8px;
+          .future{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+          }
+          .future:not(:last-child){
+            margin-right: 10px;
+          }
         }
       }
     }

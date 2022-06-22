@@ -64,6 +64,7 @@
   position: fixed;
   left: 0px;
   top: 0px;
+  background-color: #FFFFFF;
 }
 .navbar .navbar-menu {
   display: flex;
@@ -138,6 +139,7 @@ html {
   display: flex;
   flex-direction: column;
   height: 100% !important;
+  background-color: #FAFBFF;
 }
 
 .App {
@@ -306,5 +308,77 @@ html {
   align-items: center;
 }
 .suggested-communities .communities-body .community-item .p2 .future:not(:last-child) {
+  margin-right: 10px;
+}
+
+.flex {
+  display: flex;
+}
+.flex .left-side {
+  width: 80%;
+}
+.flex .right-side {
+  width: 20%;
+  margin-right: 50px;
+}
+
+.community-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 0 0 53px;
+  background-color: #FAFBFF;
+  height: 100%;
+  flex: 1 1 auto;
+}
+.community-list .community-list-single {
+  width: 300px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin: 25px;
+}
+.community-list .community-list-single .community-list-img {
+  width: 100%;
+  height: 136px;
+}
+.community-list .community-list-single .community-list-img img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.community-list .community-list-single .community-list-body {
+  display: flex;
+}
+.community-list .community-list-single .community-list-body .communitiy-list-image {
+  width: 45px;
+  height: 45px;
+  margin-top: -10px;
+  margin-left: 13px;
+}
+.community-list .community-list-single .community-list-body .communitiy-list-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  border: 3px solid #FFFFFF;
+}
+.community-list .community-list-single .community-list-body .community-list-name .name {
+  font-size: 19px;
+  padding-left: 8px;
+}
+.community-list .community-list-single .community-list-body .community-list-name .futures {
+  display: flex;
+  padding-left: 8px;
+}
+.community-list .community-list-single .community-list-body .community-list-name .futures .future {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.community-list .community-list-single .community-list-body .community-list-name .futures .future:not(:last-child) {
   margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
