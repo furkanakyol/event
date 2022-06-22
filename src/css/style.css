@@ -223,6 +223,7 @@ html {
   text-overflow: ellipsis;
   display: flex;
   align-items: center;
+  color: #353535;
 }
 .home-list .home-list-item .home-list-body .feature i {
   margin-right: 5px;
@@ -235,7 +236,7 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-.home-list .home-list-footer .community-name p {
+.home-list .home-list-footer .community-name a {
   color: #3E3E3E;
   font-size: 14px;
   max-width: 150px;
@@ -348,6 +349,8 @@ html {
   height: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .community-list .community-list-single .community-list-body {
   display: flex;
@@ -369,10 +372,12 @@ html {
 .community-list .community-list-single .community-list-body .community-list-name .name {
   font-size: 19px;
   padding-left: 8px;
+  color: #3E3E3E;
 }
 .community-list .community-list-single .community-list-body .community-list-name .futures {
   display: flex;
   padding-left: 8px;
+  color: #353535;
 }
 .community-list .community-list-single .community-list-body .community-list-name .futures .future {
   display: flex;
@@ -417,4 +422,65 @@ html {
   display: flex;
   align-items: center;
   height: 44px;
+}
+
+.sliderimg {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-image {
+  width: 100%;
+  height: 350px;
+}
+.event-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-name {
+  display: flex;
+  z-index: 15;
+  align-items: center;
+}
+.event-name .event-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.event-name .event-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event-name .event-name-tx p {
+  font-size: 24px;
+}
+.event-name .event-name-tx .futures {
+  display: flex;
+}
+.event-name .event-name-tx .futures .future {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.event-name .event-name-tx .futures .future i {
+  margin-right: 3px;
+}
+.event-name .event-name-tx .futures .future:not(:last-child) {
+  margin-right: 10px;
+}
+
+.event-desc {
+  padding: 40px;
+}
+.event-desc iframe {
+  width: 100%;
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
