@@ -9,8 +9,8 @@ const Navbar = () => {
               isActive ? "menu-item-class active" : "menu-item-class passive"
             }>
           <div className="navbar-menu-item">
-            <i class="ri-home-line"></i>
-            <span>Anasayfa</span>
+            <i class="ri-compass-line"></i>
+            <span>Keşfet</span>
           </div>
         </NavLink>
         <NavLink to={"/communities"} className={({ isActive }) =>
