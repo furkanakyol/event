@@ -299,6 +299,9 @@ html {
       display: flex;
       align-items: center;
       height: 44px;
+      p{
+        color: $color-1;
+      }
     }
   }
 }

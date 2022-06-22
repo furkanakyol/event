@@ -6,6 +6,7 @@ import Communities from "./pages/Communities";
 import EventPage from "./pages/EventPage";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import CommunitPage from "./pages/CommunityPage";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
           <Route path="/communities" element={<Communities/>}></Route>
           <Route path="/categories" element={<Categories/>}></Route>
           <Route path="/event/:eventId" element={<EventPage/>}/>
+          <Route path="/c/:communityId" element={<CommunitPage/>}/>
         </Routes>
       </div>
     </div>

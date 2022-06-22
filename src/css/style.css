@@ -423,6 +423,9 @@ html {
   align-items: center;
   height: 44px;
 }
+.categories-lists .categories-single .categories-body p {
+  color: #3E3E3E;
+}
 
 .sliderimg {
   width: 100%;
